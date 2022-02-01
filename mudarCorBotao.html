@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg">
+    <title>Mudar cor</title>
+    <script>
+        function mudaCor(color) {
+            color.style.backgroundColor = '#' + Math.floor(Math.random() * 1617).toString(16);
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="letrinha" id="demo"></h1>
+        <button onClick="mudaCor(this)" class="botaozinho">Mudar a cor</button>
+        <img class="foto" src="beemove.jpeg" alt="bee move">
+    </div>
+    <script>
+        let nome = prompt('Para melhor experiência, digite seu nome.')
+
+        if (nome != null) {
+            document.getElementById("demo").innerHTML = `Olá ${nome} esse é um site que muda a cor do botão aleatoriamente, quando clicado.`;
+        }
+    </script>
+</body>
+
+</html>

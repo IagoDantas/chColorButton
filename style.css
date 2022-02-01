@@ -1,0 +1,39 @@
+body{
+    background-color: #A491FF;
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+}
+.letrinha{
+    color: rgb(7, 7, 7);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 35px;
+}
+.botaozinho{
+    background-color:#FFEF78;
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 1.5rem;
+    width: 11rem;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+}
+
+.botaozinho:hover{
+    background-color: #f8e342;
+}
+
+.foto{
+    width: 8rem;
+    margin-top: 15px;
+    border: none;
+}
